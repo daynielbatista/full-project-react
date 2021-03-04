@@ -5,16 +5,19 @@ import HolaMundo /*, { AdiosMundo }*/ from './components/HolaMundo';
 import AdiosMundo from './components/AdiosMundo';
 import Saludar from './components/Saludar'; 
 import Passing from './components/Passing';
-import SaludarFN from './components/SaludarFN';
+import SaludarFn from './components/SaludarFn';
 
 function App() {
   const user1 = {
-    name1: "Day",
+    name1: "Dayo",
     age1: 35,
-    nationality: "Cubano"
+    nationality: "Cubano",
   };
 
-  const saludate = () => {}; /*Video 16*/
+
+  const alertar = () => {
+    alert("Hola " + user1.name1);
+  }; /*Video 16*/
 
   return (
     <div className="App">
@@ -24,7 +27,7 @@ function App() {
       <Saludar name='Meera' age="39" />
       <Saludar name='Dany' age="35" />
       <Passing userInfo={user1} />
-      <SaludarFN />
+      <SaludarFn alertar={alertar} />
     </div>
   );
 }
