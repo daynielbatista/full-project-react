@@ -6,9 +6,12 @@ export default function SaludarFn(props) {
         alert("Hola bro");
     }*/
 
+    const {user1, alertar} = props;
+
     return (
         <div>
-            <button onClick={props.alertar}>Saludate</button>
+            <button onClick={alertar}>Saludate</button>
         </div>
     );
+    
 }

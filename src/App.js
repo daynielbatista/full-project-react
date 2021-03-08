@@ -14,7 +14,6 @@ function App() {
     nationality: "Cubano",
   };
 
-
   const alertar = () => {
     alert("Hola " + user1.name1);
   }; /*Video 16*/
@@ -30,6 +29,7 @@ function App() {
       <SaludarFn alertar={alertar} />
     </div>
   );
+  
 }
 
 export default App;
